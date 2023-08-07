@@ -1,0 +1,25 @@
+name: test workflow
+
+on:
+  push:
+    - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: test
+        run: echo "farts"
+        shell: terminal
+
+  goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: end test
+        run: echo "poops"
+        shell: terminal
