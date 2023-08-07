@@ -15,11 +15,11 @@ jobs:
       - uses: actions/checkout@v2
       - name: test
         run: echo "farts"
-        shell: terminal
+        shell: bash
 
   goodbye:
     runs-on: ubuntu-latest
     steps:
       - name: end test
         run: echo "poops"
-        shell: terminal
+        shell: bash
