@@ -1,12 +1,9 @@
 name: test workflow
 
 on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+  schedule:
+    - cron: '28 15 * * *' 
+
   # workflow_dispatch:
 
 jobs:
