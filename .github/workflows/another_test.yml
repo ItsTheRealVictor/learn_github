@@ -2,9 +2,18 @@ name: Run a scheduled workflow
 
 on:
   schedule:
-    - cron: '16 22 * * *' # Adjusted for UTC time (2:03 PM PST = 10:03 PM UTC)
+    - cron: '25 22 * * *' # Adjusted for UTC time (2:03 PM PST = 10:03 PM UTC)
 
 jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: test
+        run: echo "amazing farts"
+        shell: bash
+
+
   run_script:
     runs-on: ubuntu-latest
 
