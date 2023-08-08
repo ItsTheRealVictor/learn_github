@@ -2,7 +2,7 @@ name: Run a scheduled workflow
 
 on:
   schedule:
-    - cron: '10 22 * * *' # Adjusted for UTC time (2:03 PM PST = 10:03 PM UTC)
+    - cron: '16 22 * * *' # Adjusted for UTC time (2:03 PM PST = 10:03 PM UTC)
 
 jobs:
   run_script:
