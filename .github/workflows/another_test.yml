@@ -1,4 +1,4 @@
-name: Run Python Script at 2:03 PM PST
+name: Run a scheduled workflow
 
 on:
   schedule:
