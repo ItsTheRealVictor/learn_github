@@ -2,12 +2,12 @@ name: fart workflow
 
 on:
   schedule:
-    - cron: '36 16 * * *' 
+    - cron: '38 16 * * *' 
 
   # workflow_dispatch:
 
 jobs:
-  hello:
+  fart:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
