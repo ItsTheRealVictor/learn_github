@@ -2,7 +2,7 @@ name: Run a scheduled workflow
 
 on:
   schedule:
-    - cron: '16 16 * * *' 
+    - cron: '18 16 * * *' 
 
 jobs:
   hello:
@@ -28,4 +28,4 @@ jobs:
 
 
       - name: Run Python Script
-        run: python C:\Users\DELGAVI\Desktop\Stuff\python\learn_github\test.py # Replace with the actual path to your Python script
+        run: python test.py # Replace with the actual path to your Python script
