@@ -1,31 +1,16 @@
-name: Run a scheduled workflow
-
-on:
+name: Experiment
+on: 
   schedule:
-    - cron: '18 16 * * *' 
+  - cron: '*/5 * * * *'
 
 jobs:
-  hello:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: test
-        run: echo "amazing farts"
-        shell: bash
-
-
-  run_script:
+  job1:
+    name: Debug
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.11' # Replace 'x' with the desired Python version
-
-
-      - name: Run Python Script
-        run: python test.py # Replace with the actual path to your Python script
+    - name: Git checkout
+      uses: actions/checkout@v2
+      with: { ref: debug }
+    - name: List files
+      run: ls
