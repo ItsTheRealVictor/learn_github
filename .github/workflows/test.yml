@@ -2,7 +2,7 @@ name: fart workflow
 
 on:
   schedule:
-    - cron: '18 23 * * *' 
+    - cron: '36 j j 16 * * *' 
 
   # workflow_dispatch:
 
